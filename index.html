@@ -2,10 +2,56 @@
 <HTML>
   <HEAD>
     <TITLE>GENERACION 0423 SMA</TITLE>
+    <LINK rel="stylesheet" href="index.css" type="text/css" />
+    <STYLE>
+      BODY{
+        background-color: red;
+      }
+    </STYLE>
   </HEAD>
-  <BODY>
-    <CENTER><H1>HOLA MUNDO</H1></CENTER>
+  <BODY style="background-color: yellowgreen;">
+    <DIV>
+    <CENTER><H1 class="titulo">HOLA MUNDO</H1></CENTER>
+    <CENTER><h2 class="titulo">HOLA MUNDO</H2></CENTER>
+    <CENTER><H3 class="titulo">HOLA MUNDO</H3></CENTER>
+    <CENTER><H4 >HOLA MUNDO</H4></CENTER>
+    <CENTER><H5 class="titulo">HOLA MUNDO</H5></CENTER>
+    <CENTER><H6 class="titulo">HOLA MUNDO</H6></CENTER>
+    </DIV>
+    <P>Aplicando estilo al color <B>rojo</b> de esta línea</P>
     <IMG SRC="imagenes/gatito.webp" alt="Imagen de gatos cachorros en el pasto">
-    <P>Aprendiendo GITHUB Y HTML 5</P>
+    <P class="titulo" id="texto">Aprendiendo GITHUB Y HTML 5</P>
+    <A href="https://www.google.com/">IR A GOOGLE</A>
+    <A href="#">IR A CONTACTO</A>
+
+    <VIDEO width=100% height=1000 controls autoplay loop muted>
+      <SOURCE src="videos/Gatitos.mp4" type="video/mp4"/>
+    </VIDEO>
+    <P>Hola Mundo</P>
+    <FORM>
+      <FIELDSET>
+      <LEGEND>DATOS PERSONALES</LEGEND>
+      <LABEL for="firstname">Nombre: </LABEL>
+      <INPUT class="Nombre" value="Alfredo" type="text" id="firstname" name="firstname"/><BR/>
+      <LABEL for="lastname">Apellido: </LABEL>
+      <INPUT class="Apellido" type="text" id="lastname" name="lastname"/><BR/>
+      <LABEL for="password">Contraseña: </LABEL>
+      <INPUT type="password" id="password" name="password"/><BR/>
+      <LABEL for="email">Email: </LABEL>
+      <INPUT type="email" id="email" name="email"/> <br/>
+      <LABEL for="gender">Genero: </LABEL>
+      <INPUT type="radio" id="gender" name="gender" value="male"/>Masculino
+      <INPUT type="radio" id="gender" name="gender" value="female"/>Femenino
+      <INPUT type="radio" id="gender" name="gender" value="other"/>Otro <BR/>
+      Pasatiempo:<BR/>
+      <INPUT type="checkbox" id="sing" name="sing" value="sing"/>
+      <LABEL for="sing">Cantar</LABEL><BR/>
+      <INPUT type="checkbox" id="football" name="football" value="football"/>
+      <LABEL for="football">Futbol</LABEL><BR/>
+      <INPUT type="checkbox" id="reading" name="reading" value="reading"/>
+      <LABEL for="reading">Leer</LABEL><BR/>
+      <INPUT type="submit" value="Enviar">
+      </FIELDSET>
+    </FORM>
   </BODY>
 </HTML>
